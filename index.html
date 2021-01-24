@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AtCoder Jessie</title>
+  <title>Jessie Atcoder</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 
@@ -28,19 +28,23 @@
   
   <div class="my-5">
 
-    <div>
+    <div class='mt-5'>
       <p>解くときに参考にしているページ</p>
       <ul>
         <li><a href="https://qiita.com/junkls/items/10384950963056cc8e08">itertools 順列や組み合わせのループに</a></li>
-        <li><a href="https://qiita.com/yousuke_yamaguchi/items/23014a3c8d8beb8ba073">辞書やリストのリストなどの並び替え</a></li>
+        <li><a href="https://qiita.com/yousuke_yamaguchi/items/23014a3c8d8beb8ba073">辞書の並び替え</a></li>
+        <li><a href="https://note.nkmk.me/python-for-usage/">for文のelse</a></li>
+        <li><a href="https://qiita.com/takayg1/items/c811bd07c21923d7ec69">Pythonでセグ木。コードを読まないで使えるようになってしまう記事</a></li>
+        <li><a href="https://docs.python.org/ja/3/library/functools.html">再帰のキャッシュ(Ver3.9のはAtCoderでは使えないことに注意)</a> : <a href="https://atcoder.jp/contests/agc044/submissions/19376046">実装例</a></li>
       </ul>
     </div>
     
     <div class="p-3" style="background-color: rgba(189, 252, 94, 0.336);">
       <p class="h1">緑の問題リスト</p>
       
-      <div>
-        <p class="h2">実装は大変じゃない！嬉しい！</p>
+      <div class='mt-5'>
+        <p class="h2">実装"は"大変じゃない！</p>
+        <p class='h4'>個人的には実装とか構造の理解がないから嬉しいやつ。</p>
         <dl>
           <dt><a href="https://atcoder.jp/contests/abc107/tasks/arc101_a">C - Candles</a></dt>
           <dd>考察も軽め</dd>
@@ -64,14 +68,22 @@
           <dd>とても好き。実装一瞬でできるのも好き。小学生の時にやった、「1から3つまで数えて良くて、30を言ったら負け」みたいなゲームの必勝法とか懐かしくなった！笑 とりあえずボールを何個か並べて書いて(っていうのを無限回して)、必勝の形がどういうのか考えたら気づけた。後から考えると、勝ちの状態って「相手の動作に合わせて復元可能」だっていうことを意識したら、すごく考え易くなる！</dd>
           <dt><a href="https://atcoder.jp/contests/abc036/tasks/abc036_c">C. 座圧</a></dt>
           <dd>試験管だから緑なんだなぁ。</dd>
-
+          <dt><a href="https://atcoder.jp/contests/abc125/tasks/abc125_c">C. GCD on Blackboard</a></dt>
+          <dd>普通に両端から考えていけばいいのに、わざわざセグ木使っちゃった！笑 まぁ間に合ったからよし！泣 想定解なら実行時間が約1/10しかかからなかった〜。<a href="https://atcoder.jp/contests/abc189/tasks/abc189_c">C. Mandarin Orange</a>この問題でセグ木とか考えて失敗したのが実は昨日（2021年1月23日）なのに、反省してない！笑</dd>
+          <dt><a href="https://atcoder.jp/contests/abc160/tasks/abc160_e">E. Red and Green Apples</a></dt>
+          <dd>「DPと累積和っぽい。」って思ったけど、無色を1個、2個、3個、、、って増やした時に、k個の場合にk通り考えないとだめだから計算間に合わないじゃん詰んだって思ったよね。解説見ちゃった〜。累積和考えるときに、X個までで止めちゃお〜とかまでは考えたけど、2つの色のをそれぞれ制限しておけば、もうあとは上からって、、、天才ですか！？すごい。</dd>
         </dl>
+      </div>
+      <div class="my-5">
         <p class="h2">式変形と考察</p>
         <dl>
           <dt><a href="https://atcoder.jp/contests/agc036/tasks/agc036_a">A - Triangle</a></dt>
           <dd>三角形の面積公式</dd>
           <dt><a href="https://atcoder.jp/contests/arc111/tasks/arc111_a">A - Simple Math 2</a></dt>
           <dd>mod</dd>
+          <dt><a href="https://atcoder.jp/contests/abc108/tasks/arc102_a">C. Triangular Relationship</a></dt>
+          <dd>数学問だ！倍数の性質をわかっていたら奇数の方は簡単なやつ！ラッキー！って思ったけど、2が掛かってるから偶数の方は思っていたほど楽じゃなかった。泣 全部がkの倍数、全部がk//2の倍数（だけどkでは割れない）で場合わけか。テストケース1と4が平方数の和になっていて、エスパーし易いのがありがたい。n が奇数のときには、1からnまでの自然数の中に奇数の方が1個多い〜とか、当たり前のことなんだけど盲点なるかも！っって！！解説かっこいい。。。泣
+          </dd>
           <dt><a href=""></a></dt>
           <dd></dd>
           <dt><a href=""></a></dt>
@@ -79,6 +91,8 @@
           <dt><a href=""></a></dt>
           <dd></dd>
         </dl>
+      </div>
+      <div class="my-5">
         <p class="h2">添字と個数ややこし</p>
         <dl>
           <dt><a href="https://atcoder.jp/contests/tenka1-2019-beginner/tasks/tenka1_2019_c">C - Stones</a></dt>
@@ -93,24 +107,16 @@
           <dd></dd>
         </dl>
       </div>
-      <div>
-        <p class="h2">実装頑張るやつ</p>
+      
+      <div class='mt-5'>
+        <p class="h2">Diffより難しい（という気持ち）！</p>
         <dl>
           <dt><a href="https://atcoder.jp/contests/panasonic2020/tasks/panasonic2020_d">D. String Equivalence</a></dt>
-          <dd>かなりしんどかった。類題を以前解いてたから、時間かかったけど解けた！</dd>
-          </dd>
-          <dt><a href=""></a></dt>
-          <dd></dd>
-          <dt><a href=""></a></dt>
-          <dd></dd>
-        </dl>
-      </div>
-      <div>
-        <p class="h2">Diffより絶対難しい！！</p>
-        <dl>
+          <dd>かなりしんどかった。最初、とりあえず a は絶対に b よりも多いなぁなんて意味不明な文字の組み合わせ列挙したりしたけど、abbba みたいに、a より b が多いこともあるじゃんってなったり混乱した。ただ、それで気を取り直して前から考えればよき！ってことで、類題を以前解いてたから、時間かかったけど解けた！類題は、数字を並べていく問題なんだけど、今はどれかわかってなくて見つけたら載せる！</dd>
           <dt><a href="https://atcoder.jp/contests/ddcc2020-qual/tasks/ddcc2020_qual_c">C - Strawberry Cakes</a></dt>
-          <dd>再帰で後で解き直す！！配信解説のやり方を見てとりあえずACした。確かに。。。ってすごくなる。
-          </dd>
+          <dd>再帰で後で解き直す！！配信解説のやり方を見てとりあえずACした。確かに。。。ってすごくなる。が、自分じゃ気づかない。。。</dd>
+          <dt><a href="https://atcoder.jp/contests/abc112/tasks/abc112_c">C. Pyramid</a></dt>
+          <dd>最初、高度0のことを深く考えてなくて混乱。次に、高度が0だけだと高さが確定しないから、0以外の数字が必ず出てくると気づく。ということは、0については後回しにして、矛盾がないことのチェックだけでよき！。。。と思ったけど通らない。本当は0より小さい数だけど、0にしちゃうってことは、高度が0のからheightを計算すると大きく出るはずってのがわかってなかった〜。テストケースみちゃったよ。。。先に気付きたい。</dd>
           <dt><a href=""></a></dt>
           <dd></dd>
           <dt><a href=""></a></dt>
@@ -136,6 +142,8 @@
       </dl>
     </div>
 
+
+    
     <div class="my-5">
       <p class="h2">進捗ツイートまとめ</p>
       <ol>
@@ -148,5 +156,41 @@
     </div>
 
   </div>
+  
+  <div class="my-4">
+    <div class="p-3" style="background-color: rgba(139, 238, 255, 0.336);">
+      <p class="h1">水色の問題リスト</p>
+      <div class="my-5">
+        <p class="h2">実装"は"大変じゃない！</p>
+        <p class='h4'>個人的には実装とか構造の理解がないから嬉しいやつ。</p>
+        <dl>
+          <dt><a href="https://atcoder.jp/contests/abc105/tasks/abc105_c">C. Base -2 Number</a></dt>
+          <dd>手で筆算したら、nが2位上のときのn進法と変わらず計算できると気づく！テストケースが親切だよね！負の割り算だから、ちょっと調整が必要だった〜。</dd>
+
+        </dl>
+      </div>
+
+    </div>
+  </div>
+  
+
+  <div class="my-4">
+    <div class="p-3" style="background-color: rgba(43, 40, 214, 0.322);">
+      <p class="h1">青色の問題リスト</p>
+      <div class="my-5">
+        <p class="h2">分類まだ</p>
+        <dl>
+          <dt><a href="https://atcoder.jp/contests/agc044/tasks/agc044_a">A. Pay to Win</a></dt>
+          <dd><a href="https://atcoder.jp/contests/abc188/tasks/abc188_f">F. +1-1x2</a>とセット。初めてPythonにもともとあるキャッシュ機能を知った。</dd>
+          <dt><a href="https://atcoder.jp/contests/abc188/tasks/abc188_f">F. +1-1x2</a></dt>
+          <dd><a href="https://atcoder.jp/contests/agc044/tasks/agc044_a">A. Pay to Win</a>とセット。見返すとシンプル。次こういうのが出たら解きたい。</dd>
+
+
+        </dl>
+      </div>
+
+    </div>
+  </div>
+
 </body>
 </html>

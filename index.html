@@ -72,6 +72,25 @@
           <dd>普通に両端から考えていけばいいのに、わざわざセグ木使っちゃった！笑 まぁ間に合ったからよし！泣 想定解なら実行時間が約1/10しかかからなかった〜。<a href="https://atcoder.jp/contests/abc189/tasks/abc189_c">C. Mandarin Orange</a>この問題でセグ木とか考えて失敗したのが実は昨日（2021年1月23日）なのに、反省してない！笑</dd>
           <dt><a href="https://atcoder.jp/contests/abc160/tasks/abc160_e">E. Red and Green Apples</a></dt>
           <dd>「DPと累積和っぽい。」って思ったけど、無色を1個、2個、3個、、、って増やした時に、k個の場合にk通り考えないとだめだから計算間に合わないじゃん詰んだって思ったよね。解説見ちゃった〜。累積和考えるときに、X個までで止めちゃお〜とかまでは考えたけど、2つの色のをそれぞれ制限しておけば、もうあとは上からって、、、天才ですか！？すごい。</dd>
+          <dt><a href="https://atcoder.jp/contests/agc038/tasks/agc038_a">A - 01 Matrix</a></dt>
+          <dd>実装はめちゃめちゃ簡単だけど、一生気付かなかった。列ごとに独立な条件なんてないのだから、一括で決められるって思えるといいなぁ。</dd>
+          <dt><a href="https://atcoder.jp/contests/abc042/tasks/arc058_a">C. こだわり者いろはちゃん / Iroha's Obsession</a></dt>
+          <dd>ループを回して、だめなものが入っていたら飛ばしていく！</dd>
+          <dt><a href="https://atcoder.jp/contests/abc019/tasks/abc019_3">C. 高橋くんと魔法の箱</a></dt>
+          <dd>テストケースも親切だね！「2がいくらかかっていても、無意味」って思いながら、set に入れていったよ。</dd>
+          <dt><a href="https://atcoder.jp/contests/abc048/tasks/arc064_a">C. Boxes and Candies</a></dt>
+          <dd>一番前は、x より小さくなきゃだめだけど、あとは、なるべく無駄のないように減らしていけばいいから、自分と自分の前の合計が〜ってなるまで減らしていくのを繰り返せばよき！自分を余計に減らすより、その先に影響の残る次のを減らした方がいいって思想だね。</dd>
+          <dt><a href="https://atcoder.jp/contests/arc034/tasks/arc034_2">B - 方程式</a></dt>
+          <dd>これは普通に回しても通るのかな？一応、n よりもすごく小さいところは答えになり得ないから、n の近くから回すようにした！</dd>
+          <dt><a href="https://atcoder.jp/contests/arc023/tasks/arc023_2">B - 謎の人物X</a></dt>
+          <dd>テストケースの3つ目が親切だね！近くないとダメだし、偶奇も関係してるってことが大事！</dd>
+          
+
+
+          
+          <!-- <dt><a href="https://img.atcoder.jp/abc140/editorial.pdf">わからんかった。また明日。</a></dt> -->
+
+          <dd></dd>
         </dl>
       </div>
       <div class="my-5">
@@ -109,7 +128,7 @@
       </div>
       
       <div class='mt-5'>
-        <p class="h2">Diffより難しい（という気持ち）！</p>
+        <p class="h2">Diffより難しいと思う or 実装に気をつける！</p>
         <dl>
           <dt><a href="https://atcoder.jp/contests/panasonic2020/tasks/panasonic2020_d">D. String Equivalence</a></dt>
           <dd>かなりしんどかった。最初、とりあえず a は絶対に b よりも多いなぁなんて意味不明な文字の組み合わせ列挙したりしたけど、abbba みたいに、a より b が多いこともあるじゃんってなったり混乱した。ただ、それで気を取り直して前から考えればよき！ってことで、類題を以前解いてたから、時間かかったけど解けた！類題は、数字を並べていく問題なんだけど、今はどれかわかってなくて見つけたら載せる！</dd>
@@ -117,9 +136,14 @@
           <dd>再帰で後で解き直す！！配信解説のやり方を見てとりあえずACした。確かに。。。ってすごくなる。が、自分じゃ気づかない。。。</dd>
           <dt><a href="https://atcoder.jp/contests/abc112/tasks/abc112_c">C. Pyramid</a></dt>
           <dd>最初、高度0のことを深く考えてなくて混乱。次に、高度が0だけだと高さが確定しないから、0以外の数字が必ず出てくると気づく。ということは、0については後回しにして、矛盾がないことのチェックだけでよき！。。。と思ったけど通らない。本当は0より小さい数だけど、0にしちゃうってことは、高度が0のからheightを計算すると大きく出るはずってのがわかってなかった〜。テストケースみちゃったよ。。。先に気付きたい。</dd>
+          <dt><a href="https://atcoder.jp/contests/abc099/tasks/abc099_c">C - Strange Bank</a></dt>
+          <dd>とりあえず再帰で解いたけど、再帰の上限とかの調整がちょっと不安だったり。テストケースに比較的大きな数字あって助かった。キャッシュの設定とか、よくわかってないけどPythonさんだから楽にできてるんだよね？DPでもやる。</dd>
+          <dt><a href="https://atcoder.jp/contests/arc009/tasks/arc009_2">B - おとぎの国の高橋君</a></dt>
+          <dd>ソートのキー指定を全くわかってなくて、置換を繰り返して解いちゃった。30分以上余裕でかけてもったいなかった〜泣 ソートの勉強しなきゃ！</dd>
+
+          
           <dt><a href=""></a></dt>
-          <dd></dd>
-          <dt><a href=""></a></dt>
+          
           <dd></dd>
         </dl>
       </div>
@@ -142,7 +166,24 @@
       </dl>
     </div>
 
-
+    <div class="my-4">
+      <div class="p-3" style="background-color: rgba(143, 143, 143, 0.199);">
+        <p class="h1">問題タイプ別</p>
+        <div class="my-5">
+          <p class="h2">DPとメモ化再帰</p>
+          <p>Pythonは、メモ化再帰も2行足すだけで簡単にできるから、c++よりメモ化再帰が気軽にできると思う！</p>
+          <dl>
+            <dt><a href="https://atcoder.jp/contests/dp/tasks/dp_c">C - Vacation</a></dt>
+            <dd><a href="https://atcoder.jp/contests/dp/submissions/19674083">DPで解いたのがこれ</a>で、<a href="https://atcoder.jp/contests/dp/submissions/19674392">再帰で解いたのがこれ</a>。</dd>
+            <dt><a href="https://atcoder.jp/contests/dp/tasks/dp_d">D - Knapsack 1</a></dt>
+            <dd><a href="https://atcoder.jp/contests/dp/submissions/19675456">DPで解いたのがこれ</a>。PyPyじゃないと間に合わなかった。泣 それから、添字が負になるとエラーになると錯覚して、ちょっと手こずった。<a href="https://atcoder.jp/contests/dp/submissions/19676010">再帰で書いた</a>けど、PythonでもPyPyでもTLEなって通らない〜！笑</dd>
+            <dt><a href="https://atcoder.jp/contests/abc015/tasks/abc015_4">ABC 015 D - 高橋くんの苦悩</a></dt>
+            <dd><a href="https://atcoder.jp/contests/abc015/submissions/17830742">Python最速のeijirouさんの提出</a>を参考に一応ACしたが、2通りでちゃんと解く。3つの要素の絡んだDPだから、水色Diffになってるね〜。</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  
     
     <div class="my-5">
       <p class="h2">進捗ツイートまとめ</p>
@@ -181,14 +222,11 @@
         <p class="h2">分類まだ</p>
         <dl>
           <dt><a href="https://atcoder.jp/contests/agc044/tasks/agc044_a">A. Pay to Win</a></dt>
-          <dd><a href="https://atcoder.jp/contests/abc188/tasks/abc188_f">F. +1-1x2</a>とセット。初めてPythonにもともとあるキャッシュ機能を知った。</dd>
+          <dd>再帰。<a href="https://atcoder.jp/contests/abc188/tasks/abc188_f">F. +1-1x2</a>とセット。初めてPythonにもともとあるキャッシュ機能を知った。</dd>
           <dt><a href="https://atcoder.jp/contests/abc188/tasks/abc188_f">F. +1-1x2</a></dt>
-          <dd><a href="https://atcoder.jp/contests/agc044/tasks/agc044_a">A. Pay to Win</a>とセット。見返すとシンプル。次こういうのが出たら解きたい。</dd>
-
-
+          <dd>再帰。<a href="https://atcoder.jp/contests/agc044/tasks/agc044_a">A. Pay to Win</a>とセット。見返すとシンプル。次こういうのが出たら解きたい。</dd>
         </dl>
       </div>
-
     </div>
   </div>
 

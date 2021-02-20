@@ -41,6 +41,36 @@
     
     <div class="p-3" style="background-color: rgba(189, 252, 94, 0.336);">
       <p class="h1">緑の問題リスト</p>
+      <div class='mt-5'>
+        <p class="h2">Diffより難しいと思う or 要復習</p>
+        <dl>
+          <dt><a href="https://atcoder.jp/contests/panasonic2020/tasks/panasonic2020_d">D. String Equivalence</a></dt>
+          <dd>かなりしんどかった。最初、とりあえず a は絶対に b よりも多いなぁなんて意味不明な文字の組み合わせ列挙したりしたけど、abbba みたいに、a より b が多いこともあるじゃんってなったり混乱した。ただ、それで気を取り直して前から考えればよき！ってことで、類題を以前解いてたから、時間かかったけど解けた！類題は、数字を並べていく問題なんだけど、今はどれかわかってなくて見つけたら載せる！</dd>
+          <dt><a href="https://atcoder.jp/contests/ddcc2020-qual/tasks/ddcc2020_qual_c">C - Strawberry Cakes</a></dt>
+          <dd>再帰で後で解き直す！！配信解説のやり方を見てとりあえずACした。確かに。。。ってすごくなる。が、自分じゃ気づかない。。。</dd>
+          <dt><a href="https://atcoder.jp/contests/abc112/tasks/abc112_c">C. Pyramid</a></dt>
+          <dd>最初、高度0のことを深く考えてなくて混乱。次に、高度が0だけだと高さが確定しないから、0以外の数字が必ず出てくると気づく。ということは、0については後回しにして、矛盾がないことのチェックだけでよき！。。。と思ったけど通らない。本当は0より小さい数だけど、0にしちゃうってことは、高度が0のからheightを計算すると大きく出るはずってのがわかってなかった〜。テストケースみちゃったよ。。。先に気付きたい。</dd>
+          <dt><a href="https://atcoder.jp/contests/abc099/tasks/abc099_c">C - Strange Bank</a></dt>
+          <dd>とりあえず再帰で解いたけど、再帰の上限とかの調整がちょっと不安だったり。テストケースに比較的大きな数字あって助かった。キャッシュの設定とか、よくわかってないけどPythonさんだから楽にできてるんだよね？DPでもやる。</dd>
+          <dt><a href="https://atcoder.jp/contests/arc009/tasks/arc009_2">B - おとぎの国の高橋君</a></dt>
+          <dd>ソートのキー指定を全くわかってなくて、置換を繰り返して解いちゃった。30分以上余裕でかけてもったいなかった〜泣 ソートの勉強しなきゃ！</dd>
+          <dt><a href="https://atcoder.jp/contests/abc146/tasks/abc146_d">D - Coloring Edges on Tree</a></dt>
+          <dd>
+            とても難しい。他ので補完しながら解くことに。
+            <ul>
+              <li><a href="https://qiita.com/drken/items/a803d4fc4a727e02f7ba">DFS (深さ優先探索) 超入門！ 〜 グラフ・アルゴリズムの世界への入口 〜【後編】</a> : このページを参考に。</li>
+              <li><a href="https://atcoder.jp/contests/atc001/tasks/dfs_a">A - 深さ優先探索</a> : </li>
+            </ul>
+          </dd>
+          
+          <dt><a href="https://atcoder.jp/contests/agc049/tasks/agc049_b">B - Flip Digits</a></dt>
+          <dd>難しい。</dd>
+          <dt><a href="https://atcoder.jp/contests/abc153/tasks/abc153_e">E - Crested Ibis vs Monster</a></dt>
+          <dd>DP典型とのこと。もう一回自分で書いてみる。next j のnjがかっこいいね！</dd>
+          <dt><a href=""></a></dt>
+          <dd></dd>
+        </dl>
+      </div>
       
       <div class='mt-5'>
         <p class="h2">実装"は"大変じゃない！</p>
@@ -84,12 +114,24 @@
           <dd>これは普通に回しても通るのかな？一応、n よりもすごく小さいところは答えになり得ないから、n の近くから回すようにした！</dd>
           <dt><a href="https://atcoder.jp/contests/arc023/tasks/arc023_2">B - 謎の人物X</a></dt>
           <dd>テストケースの3つ目が親切だね！近くないとダメだし、偶奇も関係してるってことが大事！</dd>
-          
-
-
-          
+          <dt><a href="https://atcoder.jp/contests/agc034/tasks/agc034_b">B. ABC</a></dt>
+          <dd><a href="https://atcoder.jp/contests/agc034/submissions/20024901">dequeを使ったけど、そんな必要なかった。</a>要点は「右から見る」と「まとめる」だね〜〜。うーん。気付かなかった。</dd>
+          <dt><a href="https://atcoder.jp/contests/abc080/tasks/abc080_c">C - Shopping Street</a></dd>
+          <dd>問題文を読むのが大変。ただのbit全探索じゃん！って気づいた時にはバチャ終了してた。泣 bit全探索は、<a href="https://qiita.com/Jessica_nao_/items/83bcc7b43aadccb51ac1">ここに問題まとめてる</a>から習得これからの人はぜひ！C問題に何度もでてる話だから、緑になる前後で習得しなきゃいけないことの1つだと思う！</dd>
+          <dt><a href="https://atcoder.jp/contests/diverta2019-2/tasks/diverta2019_2_b">B - Picking Up</a></dt>
+          <dd>2ペナもらった〜〜〜！空の配列やDictに注意だね。それから、途中から考え方変えたときに、バグらせやすいことにも注意！考え方変えたときには、そもそもの配列やDictの取り方がこのままでいいかも考えなきゃね。</dd>
+          <dt><a href="https://atcoder.jp/contests/arc097/tasks/arc097_a">C - K-th Substring</a></dt>
+          <dd>O(N**2)でも全然耐えると思ったら、余裕でTLEもらっちゃった。泣 ちゃんとKが小さいっての利用しなきゃだね。じゃなきゃ制約付けないわけだし。。。文字列操作にかかる時間を甘く見てたと初め思ったけど、ソートの分を考えてなかったのか！</dd>
+          <dt><a href="https://atcoder.jp/contests/arc020/tasks/arc020_2">B. 縞模様</a></dt>
+          <dd>ちまちま実装する。今は茶色Diffかなぁ。</dd>
+          <dt><a href="https://atcoder.jp/contests/arc006/tasks/arc006_3">C. 積み重ね</a></dt>
+          <dd>多分こうでしょ？って言うので、やっぱりそうだってなる感じ。これも茶色かな？</dd>
+          <dt><a href="https://atcoder.jp/contests/tenka1-2012-qualC/tasks/tenka1_2012_10">B. ロイヤルストレートフラッシュ</a></dt>
+          <dd>サンプルに騙された！笑 小さい数字はちゃんと除いていかなきゃね！</dd>
+          <dt><a href="https://atcoder.jp/contests/diverta2019-2/tasks/diverta2019_2_c">C. Successive Subtraction</a></dt>
+          <dd>好き勝手できるってのがミソだね！でも、全てではないってのに注意！</dd>
           <!-- <dt><a href="https://img.atcoder.jp/abc140/editorial.pdf">わからんかった。また明日。</a></dt> -->
-
+          
           <dd></dd>
         </dl>
       </div>
@@ -102,13 +144,13 @@
           <dd>mod</dd>
           <dt><a href="https://atcoder.jp/contests/abc108/tasks/arc102_a">C. Triangular Relationship</a></dt>
           <dd>数学問だ！倍数の性質をわかっていたら奇数の方は簡単なやつ！ラッキー！って思ったけど、2が掛かってるから偶数の方は思っていたほど楽じゃなかった。泣 全部がkの倍数、全部がk//2の倍数（だけどkでは割れない）で場合わけか。テストケース1と4が平方数の和になっていて、エスパーし易いのがありがたい。n が奇数のときには、1からnまでの自然数の中に奇数の方が1個多い〜とか、当たり前のことなんだけど盲点なるかも！っって！！解説かっこいい。。。泣
+          <dt><a href="https://atcoder.jp/contests/diverta2019/tasks/diverta2019_d">D - DivRem Number</a></dt>
+          <dd>得意はなずの整数問。サンプルや提出後の2WAではじき漏れに気付いて。。。水パフォ以上安定には、こういうのをもっと悔しがらないとだめだと感じた。</dd>
           </dd>
-          <dt><a href=""></a></dt>
-          <dd></dd>
-          <dt><a href=""></a></dt>
-          <dd></dd>
-          <dt><a href=""></a></dt>
-          <dd></dd>
+          <dt><a href="https://atcoder.jp/contests/abc121/tasks/abc121_d">D - XOR World</a></dt>
+          <dd>並べてみたらわかるタイプ！</dd>
+          <dt><a href="https://atcoder.jp/contests/arc051/tasks/arc051_b">B. 互除法</a></dt>
+          <dd>知ってれば瞬殺のやつ！これと、あれの、繋がりが嬉しいね！</dd>
         </dl>
       </div>
       <div class="my-5">
@@ -127,26 +169,6 @@
         </dl>
       </div>
       
-      <div class='mt-5'>
-        <p class="h2">Diffより難しいと思う or 実装に気をつける！</p>
-        <dl>
-          <dt><a href="https://atcoder.jp/contests/panasonic2020/tasks/panasonic2020_d">D. String Equivalence</a></dt>
-          <dd>かなりしんどかった。最初、とりあえず a は絶対に b よりも多いなぁなんて意味不明な文字の組み合わせ列挙したりしたけど、abbba みたいに、a より b が多いこともあるじゃんってなったり混乱した。ただ、それで気を取り直して前から考えればよき！ってことで、類題を以前解いてたから、時間かかったけど解けた！類題は、数字を並べていく問題なんだけど、今はどれかわかってなくて見つけたら載せる！</dd>
-          <dt><a href="https://atcoder.jp/contests/ddcc2020-qual/tasks/ddcc2020_qual_c">C - Strawberry Cakes</a></dt>
-          <dd>再帰で後で解き直す！！配信解説のやり方を見てとりあえずACした。確かに。。。ってすごくなる。が、自分じゃ気づかない。。。</dd>
-          <dt><a href="https://atcoder.jp/contests/abc112/tasks/abc112_c">C. Pyramid</a></dt>
-          <dd>最初、高度0のことを深く考えてなくて混乱。次に、高度が0だけだと高さが確定しないから、0以外の数字が必ず出てくると気づく。ということは、0については後回しにして、矛盾がないことのチェックだけでよき！。。。と思ったけど通らない。本当は0より小さい数だけど、0にしちゃうってことは、高度が0のからheightを計算すると大きく出るはずってのがわかってなかった〜。テストケースみちゃったよ。。。先に気付きたい。</dd>
-          <dt><a href="https://atcoder.jp/contests/abc099/tasks/abc099_c">C - Strange Bank</a></dt>
-          <dd>とりあえず再帰で解いたけど、再帰の上限とかの調整がちょっと不安だったり。テストケースに比較的大きな数字あって助かった。キャッシュの設定とか、よくわかってないけどPythonさんだから楽にできてるんだよね？DPでもやる。</dd>
-          <dt><a href="https://atcoder.jp/contests/arc009/tasks/arc009_2">B - おとぎの国の高橋君</a></dt>
-          <dd>ソートのキー指定を全くわかってなくて、置換を繰り返して解いちゃった。30分以上余裕でかけてもったいなかった〜泣 ソートの勉強しなきゃ！</dd>
-
-          
-          <dt><a href=""></a></dt>
-          
-          <dd></dd>
-        </dl>
-      </div>
       
     </div>
 
@@ -193,6 +215,7 @@
         <li><a href="https://twitter.com/Jessica_nao_/status/1336978561022869505?s=20">12月 Boot Camp Easy完</a></li>
         <li><a href="https://twitter.com/Jessica_nao_/status/1340293996074074113?s=20">12月 初青パフォ</a></li>
         <li><a href="https://twitter.com/Jessica_nao_/status/1345221606973394944?s=20">2021年1月茶色終了</a></li>
+        <li><a href="https://kenkoooo.com/atcoder/#/contest/show/e1171e33-8da6-4812-b2e4-59c4a3c6ad73">2月 すごい調子良かったバチャ</a></li>
       </ol>
     </div>
 
